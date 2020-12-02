@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #009578;
+  padding: 0 3.5em;
+  color: white;
+}
+
+.header span {
+  font-size: 32px;
+  text-shadow: 2px 3px 10px rebeccapurple, 4px 6px 20px rebeccapurple;
+}
+
+.nav__link, .nav__link_group .nav__link {
+  text-shadow: 2px 3px 10px rebeccapurple, 4px 6px 20px rebeccapurple;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.nav * {
+  font: 500 15px sans-serif;
+}
+
+.nav__link {
+  position: relative;
+  display: block;
+  padding: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #009578;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.2s;
+  font-size: 1.2em;
+}
+
+.nav__link:hover {
+  background-color: #007f66;
+}

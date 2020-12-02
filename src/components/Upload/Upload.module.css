@@ -1,0 +1,36 @@
+.wrapper {
+  height: 65vh;
+  width: 60vw;
+  box-shadow: 0 5px 10px 2px rgba(78, 78, 78, 0.9);
+
+  background-color: #fff;
+}
+
+.wrapper .header {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.493);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 1.5em 3em;
+  text-shadow: 2px 3px 10px rgb(0, 149, 119), 4px 6px 20px rgb(0, 149, 119), 16px 12px 80px rgb(0, 149, 119);
+  color: white;
+}
+
+.wrapper .close {
+  color: #CCC;
+}
+
+.wrapper .close:hover {
+  cursor: pointer;
+  color: rgb(126, 126, 126);
+}
+
+.wrapper section {
+  padding: 3em;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  flex-direction: row;
+}
+

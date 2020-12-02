@@ -1,0 +1,66 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 1em;
+  height: 60vh;
+  width: 60vw;
+  box-shadow: 0 5px 10px 2px rgba(78, 78, 78, 0.9);
+
+  background-color: #fff;
+}
+
+.section {
+  padding: 2.5em;
+}
+
+.header {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.493);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 90%;
+  padding: 1.5em;
+  font-size: 1.5em;
+  text-shadow: 2px 3px 10px rgb(0, 149, 119), 4px 6px 20px rgb(0, 149, 119), 16px 12px 80px rgb(0, 149, 119);
+  color: white;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.formControl label {
+  display: flex;
+  flex-direction: row-reverse;
+  text-shadow: 2px 3px 10px rebeccapurple, -8px 12px 20px rebeccapurple,
+    16px 12px 80px rebeccapurple;
+  color: white;
+  font-size: 1.2em;
+}
+
+.formControl select {
+  border-radius: 5px;
+  border: solid 2px #009578;
+  display: flex;
+  direction: rtl;
+  padding: 0.5em 0;
+  outline: none;
+  color: #009578;
+  }
+
+  .formControl select:hover,
+  .formControl select:focus {
+    border: 2px dashed #00957780;
+    color: #009578;
+  }
+
+  /* table, tr, td, th {
+    padding: 1em;
+    margin: 0;
+    border: solid 1px black;
+  } */
+

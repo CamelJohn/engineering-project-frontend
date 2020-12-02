@@ -1,0 +1,74 @@
+.dropZone {
+  max-width: 20em;
+  height: 18em;
+  width: 20em;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #009578;
+  border: 2px dashed rgba(0, 149, 119, 0.5);
+  border-radius: 10px;
+}
+
+.dropZone span {
+  width: 15em;
+  line-height: 2;
+  color: rgba(0, 149, 119, 0.5);
+}
+
+.dropZone_input {
+  display: none;
+}
+
+.logo {
+  height: 20%;
+  fill: rgba(0, 149, 119, 0.5);
+}
+
+.dropZoneLogoHover {
+  fill:rgb(0, 149, 119);
+}
+
+.dropZoneHover {
+  border-style: solid;
+  border-color: rgb(0, 149, 119);
+}
+
+.dropZoneSpanHover {
+  color: rgb(0, 149, 119);
+}
+
+.dropZone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ccc;
+  box-sizing: cover;
+  position: relative;
+  opacity: 0.75;
+  background-image: url('./xl.jpeg');  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dropZone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,0 +1,64 @@
+.courses_wrapper,
+.semester {
+  display: flex;
+  gap: 3.5em;
+}
+
+.courses_wrapper {
+  flex-direction: column;
+}
+
+.semester {
+  flex-direction: row;
+}
+
+.semester .course {
+  padding: 1.5em;
+  background-color: rgb(10, 136, 136);
+  border-radius: 50px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), 6px 6px 12px rgba(255, 255, 255, 0.5),
+    7px 7px 14px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px white, 2px 2px 2px black, 3px 3px 3px white;
+  border: none;
+  transform: rotate(40deg) skew(-20deg, -10deg) scale(1.2);
+
+  z-index: calc(-1 * var(--j));
+}
+
+.semester:nth-child(1) .course {
+  opacity: 0.95;
+}
+.semester:nth-child(2) .course {
+  opacity: 0.85;
+}
+.semester:nth-child(3) .course {
+  opacity: 0.8;
+}
+.semester:nth-child(4) .course {
+  opacity: 0.75;
+}
+.semester:nth-child(5) .course {
+  opacity: 0.7;
+}
+.semester:nth-child(6) .course {
+  opacity: 0.65;
+}
+.semester:nth-child(7) .course {
+  opacity: 0.55;
+}
+.semester:nth-child(8) .course {
+  opacity: 0.5;
+}
+
+.semester .course:hover {
+  cursor: pointer;
+  background-color: salmon;
+  opacity: 1;
+  /* text-shadow: none; */
+  transform: rotate(0deg) skew(0deg, 0deg) scale(1.5);
+  z-index: 3;
+  transition: 0.3s;
+}

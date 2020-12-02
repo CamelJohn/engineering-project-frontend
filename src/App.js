@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import Curriculum from './components/Curriculum/Curriculum';
+import Header from './components/Header/Header';
+import Upload from './components/Upload/Upload';
+import Visual from './components/Visual/Visual';
+import Layout from './hoc/Layout/Layout';
+
+const App = () => {
+  const routes = (
+    <Switch>
+      <Route path='/files'></Route>
+      <Route path='/file-form'>
+        <Upload />
+      </Route>
+      <Route path='/curriculum'>
+        <Curriculum />
+      </Route>
+      <Route path='/visual'>
+        <Visual />
+      </Route>
+    </Switch>
   );
-}
+
+  return (
+    <Fragment>
+      <Header />
+
+      <Router>
+        <Layout>{routes}</Layout>
+      </Router>
+    </Fragment>
+  );
+};
 
 export default App;
